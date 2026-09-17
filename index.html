@@ -4,139 +4,272 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>QS Technical Services | Dubai UAE</title>
+<title>QS - Quick Solution Technical Services | Dubai UAE</title>
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    line-height: 1.6;
+html{
+    scroll-behavior:smooth;
 }
 
-header {
-    background: #000;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #c9a227;
+body{
+    font-family:Arial, sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+    line-height:1.7;
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #d4af37;
+header{
+    background:#050505;
+    padding:20px;
+    text-align:center;
+    border-bottom:2px solid #d4af37;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-header p {
-    color: #ddd;
-    margin-top: 5px;
+.logo{
+    font-size:38px;
+    font-weight:bold;
+    color:#d4af37;
 }
 
-.hero {
-    padding: 70px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #111, #252525);
+header h2{
+    font-size:20px;
+    margin:5px 0;
 }
 
-.hero h1 {
-    font-size: 42px;
-    color: #d4af37;
-    margin-bottom: 15px;
+header p{
+    color:#ccc;
 }
 
-.hero h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+nav{
+    margin-top:15px;
 }
 
-.hero p {
-    color: #ddd;
-    max-width: 700px;
-    margin: auto;
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    margin:0 8px;
+    font-size:14px;
 }
 
-.whatsapp {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 30px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
+nav a:hover{
+    color:#d4af37;
 }
 
-section {
-    padding: 50px 20px;
-    max-width: 1100px;
-    margin: auto;
+.hero{
+    padding:90px 20px;
+    text-align:center;
+    background:
+    radial-gradient(circle at top,#3a3215 0%,#151515 35%,#080808 75%);
 }
 
-section h2 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 30px;
-    font-size: 32px;
+.hero h1{
+    font-size:48px;
+    color:#d4af37;
+    margin-bottom:10px;
 }
 
-.about {
-    text-align: center;
-    color: #ddd;
-    max-width: 850px;
-    margin: auto;
+.hero h2{
+    font-size:25px;
+    margin-bottom:20px;
 }
 
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+.hero p{
+    max-width:800px;
+    margin:auto;
+    color:#ddd;
+    font-size:18px;
 }
 
-.service {
-    background: #202020;
-    padding: 30px 20px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid #444;
+.gold{
+    color:#d4af37;
 }
 
-.service h3 {
-    color: #d4af37;
-    margin-bottom: 10px;
+.whatsapp{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 30px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:17px;
 }
 
-.service p {
-    color: #ccc;
+.whatsapp:hover{
+    opacity:.9;
 }
 
-.contact {
-    text-align: center;
-    background: #181818;
-    max-width: none;
+section{
+    max-width:1150px;
+    margin:auto;
+    padding:70px 20px;
 }
 
-.contact p {
-    margin: 10px;
-    color: #ddd;
+section h2{
+    text-align:center;
+    color:#d4af37;
+    font-size:34px;
+    margin-bottom:35px;
 }
 
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #000;
-    color: #aaa;
+.section-intro{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    color:#ccc;
 }
 
-.arabic {
-    margin-top: 10px;
-    color: #ccc;
+.arabic{
+    direction:rtl;
+    text-align:right;
+}
+
+.profile-box{
+    background:#151515;
+    border:1px solid #3c3c3c;
+    border-left:4px solid #d4af37;
+    padding:30px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+.profile-box h3{
+    color:#d4af37;
+    margin-bottom:12px;
+}
+
+.profile-box p{
+    color:#ddd;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#151515;
+    border:1px solid #333;
+    padding:28px 20px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#d4af37;
+}
+
+.card .icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#ccc;
+    font-size:15px;
+}
+
+.vision{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.vision .card{
+    text-align:left;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:30px;
+}
+
+.stat{
+    background:#101010;
+    border:1px solid #333;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.stat strong{
+    display:block;
+    color:#d4af37;
+    font-size:25px;
+}
+
+.contact{
+    background:#121212;
+    max-width:none;
+    text-align:center;
+    border-top:1px solid #333;
+}
+
+.contact p{
+    color:#ddd;
+    margin:8px;
+}
+
+.contact a.email{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+footer{
+    background:#050505;
+    text-align:center;
+    padding:30px 20px;
+    color:#aaa;
+    border-top:2px solid #d4af37;
+}
+
+.footer-title{
+    color:#d4af37;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+@media(max-width:600px){
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    header h2{
+        font-size:16px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:4px;
+    }
+
+    section{
+        padding:50px 16px;
+    }
 }
 </style>
 </head>
@@ -144,99 +277,366 @@ footer {
 <body>
 
 <header>
-    <div class="logo">QS</div>
-    <h2>QUICK SOLUTION TECHNICAL SERVICES</h2>
-    <p>Fast • Reliable • Professional</p>
+
+<div class="logo">QS</div>
+
+<h2>QUICK SOLUTION TECHNICAL SERVICES</h2>
+
+<p>Fast • Reliable • Professional</p>
+
+<nav>
+<a href="#about">About</a>
+<a href="#vision">Vision</a>
+<a href="#services">Services</a>
+<a href="#why">Why QS</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
-<div class="hero">
-    <h1>QS Technical Services</h1>
-    <h2>Building a Better Tomorrow</h2>
 
-    <p>
-        Professional technical, maintenance and civil works services
-        in Dubai and across the UAE.
-    </p>
+<section class="hero">
 
-    <a class="whatsapp"
-       href="https://wa.me/971XXXXXXXXX"
-       target="_blank">
-       💬 Contact Us on WhatsApp
-    </a>
-</div>
+<h1>QS Technical Services</h1>
 
-<section>
-    <h2>About Us</h2>
+<h2>Building a Better Tomorrow</h2>
 
-    <p class="about">
-        QS Technical Services provides reliable and professional
-        technical services for residential, commercial and industrial
-        projects across the UAE.
-    </p>
-
-    <p class="about arabic" dir="rtl">
-        نقدم خدمات فنية وصيانة وأعمال مدنية باحترافية وسرعة
-        في دبي وجميع أنحاء الإمارات.
-    </p>
-</section>
-
-<section>
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-        <div class="service">
-            <h3>❄️ AC Works</h3>
-            <p>Installation, maintenance and repair of air conditioning systems.</p>
-        </div>
-
-        <div class="service">
-            <h3>⚡ Electrical Works</h3>
-            <p>Electrical installation, maintenance and repair services.</p>
-        </div>
-
-        <div class="service">
-            <h3>🚰 Plumbing Works</h3>
-            <p>Professional plumbing installation, repair and maintenance.</p>
-        </div>
-
-        <div class="service">
-            <h3>🔧 Maintenance Works</h3>
-            <p>General building and property maintenance services.</p>
-        </div>
-
-        <div class="service">
-            <h3>🎨 Painting Works</h3>
-            <p>Interior and exterior painting and finishing works.</p>
-        </div>
-
-        <div class="service">
-            <h3>🏗️ Civil Works</h3>
-            <p>Civil works, renovation, tiling and construction services.</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="contact">
-    <h2>Contact Us</h2>
-
-    <p>📍 Dubai | UAE</p>
-    <p>📧 Quick1solutions1@gmail.com</p>
-
-    
+<p>
+Professional technical services, interior finishing,
+renovation, maintenance and civil works in Dubai
+and across the UAE.
+</p>
 
 <a class="whatsapp"
-   href="https://wa.me/971561000774"
-   target="_blank">
-   WhatsApp Us
+href="https://wa.me/971561000774"
+target="_blank">
+💬 Contact Us on WhatsApp
 </a>
+
 </section>
 
+
+<section id="about">
+
+<h2>Company Profile</h2>
+
+<div class="profile-box">
+
+<h3>About Us | من نحن</h3>
+
+<p>
+Quick Solution Technical Services is a Dubai-based technical
+services company specialized in interior finishing, fit-out,
+renovation, maintenance and civil works.
+</p>
+
+<br>
+
+<p class="arabic">
+شركة كويك سوليوشن للخدمات الفنية هي شركة مقرها دبي،
+متخصصة في التشطيبات الداخلية، أعمال الفت أوت،
+التجديد، الصيانة والأعمال المدنية.
+</p>
+
+<br>
+
+<p>
+We are committed to delivering high-quality workmanship,
+practical solutions, professional service and complete
+customer satisfaction for residential, commercial and
+industrial projects.
+</p>
+
+<br>
+
+<p class="arabic">
+نلتزم بتقديم أعمال عالية الجودة وحلول عملية وخدمة احترافية
+ورضا كامل للعملاء في المشاريع السكنية والتجارية والصناعية.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="vision">
+
+<h2>Vision & Mission</h2>
+
+<div class="vision">
+
+<div class="card">
+
+<h3>Our Vision | رؤيتنا</h3>
+
+<p>
+To become a trusted technical services partner in Dubai
+and across the UAE, recognized for quality, reliability,
+innovation and customer trust.
+</p>
+
+<br>
+
+<p class="arabic">
+أن نكون شريكاً موثوقاً في مجال الخدمات الفنية في دبي
+وجميع أنحاء الإمارات، ونتميز بالجودة والموثوقية
+والابتكار وثقة العملاء.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Our Mission | رسالتنا</h3>
+
+<p>
+To provide reliable, professional and cost-effective
+technical solutions that improve spaces and deliver
+lasting value to our customers.
+</p>
+
+<br>
+
+<p class="arabic">
+تقديم حلول فنية موثوقة واحترافية وفعالة من حيث التكلفة،
+تساهم في تحسين المساحات وتقديم قيمة مستدامة لعملائنا.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<h2>Our Services | خدماتنا</h2>
+
+<p class="section-intro">
+Complete technical and maintenance solutions for
+residential, commercial and industrial projects.
+</p>
+
+<br>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🏠</div>
+<h3>Interior Design & Fit-Out</h3>
+<p>
+Interior finishing, fit-out and space improvement solutions.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🏗️</div>
+<h3>Villa Renovation</h3>
+<p>
+Renovation, upgrades and improvement works for villas and properties.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧱</div>
+<h3>Tiles & Flooring</h3>
+<p>
+Ceramic, porcelain, flooring and professional tile installation.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>Painting & Decoration</h3>
+<p>
+Interior and exterior painting, finishing and decoration works.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⬜</div>
+<h3>Gypsum & False Ceiling</h3>
+<p>
+Gypsum partitions, false ceilings and decorative finishing.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🚗</div>
+<h3>Parking Shades</h3>
+<p>
+Parking shade supply and installation solutions.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">❄️</div>
+<h3>AC Works</h3>
+<p>
+Air conditioning installation, maintenance and repair.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Electrical Works</h3>
+<p>
+Electrical installation, maintenance and repair services.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🚰</div>
+<h3>Plumbing Works</h3>
+<p>
+Professional plumbing installation, repair and maintenance.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>General Maintenance</h3>
+<p>
+Complete property and building maintenance services.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🏗️</div>
+<h3>Civil Works</h3>
+<p>
+Civil works, renovation, construction and property improvement.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🛠️</div>
+<h3>Technical Services</h3>
+<p>
+Professional technical solutions coordinated under one service.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="why">
+
+<h2>Why Choose QS?</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Fast</h3>
+<p>
+Quick response and efficient project coordination.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Reliable</h3>
+<p>
+Professional service with focus on customer requirements.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⭐</div>
+<h3>Professional</h3>
+<p>
+Quality-focused workmanship and practical solutions.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🇦🇪</div>
+<h3>UAE Based</h3>
+<p>
+Serving Dubai and customers across the UAE.
+</p>
+</div>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+<strong>QS</strong>
+Technical Services
+</div>
+
+<div class="stat">
+<strong>UAE</strong>
+Dubai Based
+</div>
+
+<div class="stat">
+<strong>12+</strong>
+Service Categories
+</div>
+
+<div class="stat">
+<strong>24/7</strong>
+Customer Contact
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Us | تواصل معنا</h2>
+
+<p>📍 Dubai | United Arab Emirates</p>
+
+<p>
+📧
+<a class="email"
+href="mailto:Quick1solutions1@gmail.com">
+Quick1solutions1@gmail.com
+</a>
+</p>
+
+<p>📱 WhatsApp: +971 56 100 0774</p>
+
+<a class="whatsapp"
+href="https://wa.me/971561000774"
+target="_blank">
+💬 WhatsApp Us Now
+</a>
+
+</section>
+
+
 <footer>
-    © 2026 QS - QUICK SOLUTION TECHNICAL SERVICES
-    <br>
-    Fast • Reliable • Professional
+
+<div class="footer-title">
+QS - QUICK SOLUTION TECHNICAL SERVICES
+</div>
+
+<p>
+Fast • Reliable • Professional
+</p>
+
+<p>
+Building a Better Tomorrow
+</p>
+
+<br>
+
+<p>
+© 2026 QS Technical Services. All Rights Reserved.
+</p>
+
 </footer>
 
 </body>
